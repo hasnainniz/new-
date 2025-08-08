@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Meta Security Notice</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Flagged</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card {
+        background-color: #4a4a4a;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    .facebook-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .facebook-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    .warning {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .warning::before {
+        content: "⚠️ ";
+    }
+    p {
+        margin-top: 15px;
+        font-size: 0.95em;
+        line-height: 1.4;
+        color: #ddd;
+    }
+    .btn {
+        margin-top: 20px;
+        background-color: #1877f2;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn:hover {
+        background-color: #145db2;
+    }
+    .footer {
+        margin-top: 25px;
+        font-size: 0.8em;
+        color: #ccc;
+    }
+</style>
 </head>
 <body>
-  <video autoplay muted loop id="bg-video">
-    <!-- Meta promotional video embed -->
-    <source src="https://cdn.pixabay.com/video/2022/03/15/02/26/technology-7069680_960_720.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <div class="content">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
-         alt="Meta Logo" class="logo">
-    <h2>⚠️ Your Account Has Been Flagged</h2>
-    <p>We’ve detected suspicious activity or a potential violation of our Community Guidelines.</p>
-    <p>To avoid restrictions, please proceed to review your activity.</p>
-
-    <a href="https://www.facebook.com/help" class="button">Continue</a>
-
-    <div class="contact-info">
-      <p><strong>Meta Platforms, Inc.</strong></p>
-      <p>1 Hacker Way, Menlo Park, CA 94025</p>
-      <p>Phone: +1 650-543-4800</p>
-      <p>Email: support@meta.com</p>
+<div class="card">
+    <div class="facebook-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
     </div>
-  </div>
+    <div class="warning">Your Account Has Been Flagged</div>
+    <p>We’ve detected suspicious activity or a potential violation of our Community Guidelines.<br>
+    To avoid restrictions, please proceed to review your activity.</p>
+    <a href="#" class="btn">Continue</a>
+    <div class="footer">
+        Meta Platforms, Inc.<br>
+        1 Hacker Way, Menlo Park, CA 94025<br>
+      
+      
+    </div>
+</div>
+
 </body>
 </html>
